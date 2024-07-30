@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colspan and Rowspan Tutorial</title>
+  </head>
+  <body>
+    <h1>Học Table Buổi 2</h1>
+
+    <!-- Lý Thuyết -->
+    <ol type="1">
+      <li>
+        Option colspan (Column Span): Nghĩa là phần tử trong bảng sẽ chiếm bao
+        nhiêu cột. (Phần tử này có thể là th, tr, td, ...).
+      </li>
+      <li>
+        Option rowspan (Row Span): Nghĩa là phần tử trong bảng sẽ chiếm bao
+        nhiêu dòng (hàng). (Phần tử này có thể là th, tr, td, ...)
+      </li>
+    </ol>
+    <hr />
+
+    <!-- Demo -->
+    <table>
+      <tr>
+        <th>Product Name</th>
+        <th colspan="2">Describe</th>
+      </tr>
+
+      <tr>
+        <td rowspan="2">T-Shirt</td>
+        <td>Material:</td>
+        <td>Bạt</td>
+      </tr>
+      <tr>
+        <td>Size</td>
+        <td>M, L, XL, XXL</td>
+      </tr>
+
+      <tr>
+        <td>Jean Pants</td>
+        <td colspan="2">Jean Pants High Quality</td>
+      </tr>
+    </table>
+    <hr />
+
+    <!-- Practice -->
+    <table>
+      <!-- Table Header -->
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+        <!-- Row 1 -->
+        <tr>
+          <td>T-Shirt For Men</td>
+          <td>100$</td>
+          <td>50</td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+          <td>Jean Pants For Her</td>
+          <td>150$</td>
+          <td>20</td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+          <td>Sport Shoes</td>
+          <td>300$</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+
+      <!-- Table Footer -->
+      <tfoot>
+        <tr>
+          <td>Remark</td>
+          <td colspan="2">Practice Make Perfect</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+
+    <!-- Sử dụng emet để đẩy nhanh quá trình code -->
+    <table>
+      <!-- thead>tr>th*3. Trong thead có tr, trong tr có 3 thẻ th -->
+      <thead>
+        <tr>
+          <th>Tên Sản Phẩm</th>
+          <th>Giá Bán</th>
+          <th>Số Lượng</th>
+        </tr>
+      </thead>
+
+      <!-- tbody>tr*3>td*3. Trong tbody có 3 thẻ tr, trong mỗi thẻ tr lại có 3 thẻ td -->
+      <tbody>
+        <tr>
+          <td>Áo thun nam</td>
+          <td>300.000 VND</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Quần Jeans Nữ</td>
+          <td>500.000 VND</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Giày Thể Thao</td>
+          <td>1.000.000 VND</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+
+      <!-- tfoot>tr>td*2 -->
+      <tfoot>
+        <tr>
+          <td>Remark</td>
+          <td colspan="2">Chỉ Thống Kê Sản Phẩm Trong Kho</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
