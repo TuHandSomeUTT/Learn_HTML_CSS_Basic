@@ -1,0 +1,18 @@
+h1 {
+  /* Màu chữ */
+  color: deeppink;
+  /* Kiểu chữ */
+  font-style: italic;
+  /* Font chữ */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* Chuyển đổi chữ hoa - thường */
+  text-transform: capitalize;
+  /* capitalize: Viết hoa tất cả chữ cái đầu của văn bản
+     lowercase: Viết thường tất cả
+     uppercase: Viết hoa tất cả
+  */
+  /* Để căn chỉnh vị trí của văn bản */
+  text-align: center;
+  /* Cỡ chữ */
+  font-size: 25px;
+}
