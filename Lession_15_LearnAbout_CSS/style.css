@@ -1,0 +1,13 @@
+h1,
+h3 {
+  /*Viết như thế này có nghĩa là tất cả các thẻ h3 sẽ được áp dụng CSS như bên dưới. */
+  color: crimson;
+  font-style: italic;
+}
+
+/* Nếu 2 phần tử nào đó mà có các thuộc tính giống nhau ta có thể kết hợp chúng bằng cách dưới, ngăn cách các phần tử bằng dấu phẩy */
+p,
+li {
+  color: deeppink;
+  font-style: oblique;
+}
