@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      p,
+      li {
+        color: rgb(20, 28, 255);
+        font-style: oblique;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Mặc dù ở phía trên ta đã thực hiện External CSS link đến file style.css cho thẻ p và li là màu hồng deeppink. 
+     Tuy nhiên ở ngay bên dưới ta lại thực hiện Internal CSS ta quy định p, li là màu xanh dương thì nó sẽ ưu tiên thằng đến sau
+     là thằng Internal, do đó các thẻ p, li sẽ được chuyển thành xanh dương. Nếu giờ ta chuyển External CSS xuống bên dưới Internal
+     thì thẻ p, li lại chuyển sang màu deeppink do độ ưu tiên. Thử bật inspect lên thì thấy màu blue đã bị gạch ngang do không
+      dùng đến-->
+    <title>Learn About CSS</title>
+  </head>
+  <body>
+    <a href="#">Back Home</a>
+    <a href="./Contact.html">Contact Me</a>
+    <a href="./About.html">About Me</a>
+    <!-- Học về Inline CSS. Tức là CSS ngay trên phần tử HTML -->
+    <h1 style="color: blueviolet">CSS: Cascading Style Sheet</h1>
+    <h3>Viết CSS ngay trong phần tử HTML này thì gọi là Inline CSS</h3>
+    <ol type="1">
+      <p>Nhược điểm</p>
+      <li>Khó thay đổi, mỗi lần thay đổi phải làm thủ công cho từng dòng</li>
+      <li>Gặp dòng nào có nhiều option thì nhìn lòi mắt luôn :V</li>
+      <li>Không tái sử dụng được. Đây là một điều tối kỵ trong lập trình</li>
+      <li>Khó quản lý</li>
+      <li>Khó tách biệt cấu trúc</li>
+    </ol>
+    <hr />
+
+    <h3>
+      Internal CSS (CSS nội bộ) Là cách viết code CSS trong cặp thẻ style (Đặt
+      trong khối head)
+    </h3>
+
+    <p>Ưu điểm</p>
+
+    <ol type="1">
+      <li>
+        Code tách biệt với phần tử, có thể áp dụng với toàn trang (Giống như ví
+        dụ ta có thể áp dụng với toàn bộ thẻ h3)
+      </li>
+    </ol>
+    <p>Nhược điểm</p>
+    <ol type="1">
+      <li>
+        Khó quản lý khi dự án lớn, quá nhiều mã CSS sẽ làm tệp HTML trở nên cồng
+        kềnh vì nó được viết trong thẻ head, có nhiều CSS sẽ làm rối loạn file
+        HTML
+      </li>
+      <li>
+        Nếu web có nhiều trang (Multi pages) thì ta phải lặp đi lặp lại đoạn mã
+        css này trong các page đó gây ra không gọn gàng code
+      </li>
+    </ol>
+  </body>
+</html>
