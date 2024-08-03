@@ -1,0 +1,20 @@
+body {
+  background-image: url(../img/anh5.png);
+  color: white;
+}
+
+h2 {
+  /* Như dòng này ta gọi là CSS Selector (Bộ chọn, dùng để định cho các phần tử HTML các thuộc tính CSS)*/
+  opacity: 0%;
+  /* display: none; ẩn phần từ khỏi giao diện và xóa luôn không gian nó chiếm dụng*/
+  background-color: pink;
+  /*visibility: hidden;*/ /*ẩn khỏi giao diện, vẫn chiếm không gian, không tương tác được*/
+}
+
+p {
+  font-size: 25px;
+}
+
+span {
+  color: chartreuse;
+}
