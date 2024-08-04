@@ -1,0 +1,13 @@
+/* li {
+  color: deeppink;
+  user-select: none;
+}
+  /* Trên đây là code trước khi đưa lên web để auto prefix . Dưới là code đã auto prefix*/
+li {
+  color: deeppink;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Ngăn chặn copy */
+}
