@@ -1,0 +1,15 @@
+img {
+  transition: 1.5s;
+}
+
+/* Nếu input được tick chọn ta sẽ chọn tất cả những phần tử img đồng cấp liền sau nó */
+input:checked ~ img {
+  /*Cái này gọi là selector : Bộ chọn*/
+  /* 1.Biến mất khỏi giao diện */
+  /* display: none; */
+  /* 2.Ẩn khỏi giao diện nhưng vẫn chiếm vị trí */
+  /* visibility: hidden; */
+  /* 3. Làm mờ đi sau đó ẩn hẳn khỏi giao diện*/
+  opacity: 0%;
+  visibility: hidden;
+}
