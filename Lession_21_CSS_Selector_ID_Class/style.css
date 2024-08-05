@@ -1,0 +1,25 @@
+p {
+  color: red;
+  font-size: 25px;
+}
+
+/* Dấu # là gọi id */
+#p2 {
+  /* Thẻ chứa id là p2 thì sẽ có màu chữ là deeppink */
+  color: deeppink;
+}
+
+/* Dấu . là gọi class */
+.demo {
+  color: blueviolet;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.demo2 {
+  font-size: 25px;
+}
+
+.ul_newproperties {
+  list-style: none;
+  font-size: 25px;
+}

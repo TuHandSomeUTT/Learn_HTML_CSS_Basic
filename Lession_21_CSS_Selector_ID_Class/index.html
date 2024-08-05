@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Learn About CSS Selector, Name Tag, ID, Class</title>
+  </head>
+  <body>
+    <h1>CSS Selector là gì?</h1>
+    <p>
+      1. HTML là ngôn ngữ đánh dấu, CSS để tạo kiểu, khi viết web lớn sẽ có hàng
+      trăm, hàng ngàn phần tử HTML. Vậy làm thế nào để xác định chính xác phần
+      tử nằm trên trang đó để tác động chính xác lên phần tử đó thôi? Ta sử dụng
+      CSS Selector nhé
+    </p>
+    <p id="p2">
+      2. CSS Selector hay còn gọi là bộ chọn, chỉ đơn giản là nó giúp ta chọn
+      đúng phần tử nằm trên trang HTML
+    </p>
+    <p id="p2">
+      3. id selector: Dùng khi chỉ muốn áp dụng CSS cho 1 phần tử chỉ định nào
+      đó của HTML thì khi đó ta dùng id. Tình huống sử dụng là khi ta có nhiều
+      phần tử HTML giống nhau nhưng ta chỉ muốn tác động vào 1 phần tử cụ thể
+      nào đó thì lúc đó ta dùng id. Không nên đặt id trùng tên nhau để tránh bị
+      rối.
+    </p>
+    <p>
+      4. Class selector: Do id được sử dụng lại tên id. Trong trường hợp muốn
+      khai báo lại thì ta dùng class selector
+    </p>
+    <h2 class="demo">
+      Khi sử dụng id selector thì ở trong phần tử html ta gõ id và đặt tên id
+      trong cặp dấu "" sang bên file css với cú pháp bắt đầu bằng dấu #tenid
+    </h2>
+    <h3 class="demo demo2">
+      class selector thì quy tắc đặt tên cũng như id selector, chỉ khác bên css
+      bắt đầu bằng dấu . thay vì dấu #. Example: .tenClass <br />
+      1 phần tử HTML có thể nhận nhiều class css, các class các nhau bằng dấu
+      space.
+    </h3>
+
+    <!-- Học thêm được 1 thuộc tính mới của thẻ ul dùng để loại bỏ dấu chấm đen trước tên các list-->
+    <ul class="ul_newproperties">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </body>
+</html>
