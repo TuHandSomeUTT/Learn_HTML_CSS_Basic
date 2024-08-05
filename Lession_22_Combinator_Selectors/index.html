@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Combinator Selectors</title>
+  </head>
+  <body>
+    <h1>What is Combinator Selectors ?</h1>
+    <h2>
+      Trên web pages có nhiều phần tử HTML, nếu ta dùng id và class đơn thuần sẽ
+      làm code trở nên nặng nề hơn do có nhiều phần tử có chung thuộc tính css.
+      Do vậy nên có bộ chọn kết hợp để gom nhóm lại giúp code ngắn hơn.
+    </h2>
+    <h3>
+      Hôm nay ta sẽ học
+      <ul>
+        <li>* selector</li>
+        <li>element .class</li>
+      </ul>
+    </h3>
+    <p>
+      * selector để tác động lên tất cả các thẻ, phần tử HTML trên web pages.<br />
+      CSS syntax: * { code here}
+    </p>
+
+    <!-- Tiếp đến là element.class -->
+    <p>
+      Chẳng hạn ta muốn chọn tất cả phần tử h3 với class là intro thì syntax như
+      sau: (Đây là trường hợp các tag dùng chung class, và các tag khác nhau)<br />
+      - Bên file HTML phải đặt tên class trước đã :V <br />
+      - Bên file CSS: h3.intro {Code here ...}
+    </p>
+    <h3 class="intro">
+      Túm lại bài này gom các element có cùng kiểu class với nhau để dễ dàng
+      CSS. Nếu gặp cái nào cần CSS riêng thì dùng element.class
+    </h3>
+  </body>
+</html>
