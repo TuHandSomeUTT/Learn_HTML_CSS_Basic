@@ -1,0 +1,18 @@
+/* Đây là kiểu 1, chọn các bộ chọn và ngăn cách nhau bởi dấu phẩy, gồm HTML element, id, class */
+#p1,
+.demo,
+h2 {
+  color: deeppink;
+  font-size: 25px;
+}
+
+/* Đây là kiểu 2 áp dụng cho những đối tượng cá biệt, chỉ áp dụng cho các HTML element mang những class 
+mà ta liệt kê ra dưới đây mới bị ảnh hưởng (id thì không được nhé, chú ý ví dụ bên dưới)*/
+.demo.demo2 {
+  color: red;
+}
+
+/* Không ăn css */
+#demo3#demo4 {
+  color: rgb(43, 226, 52);
+}
