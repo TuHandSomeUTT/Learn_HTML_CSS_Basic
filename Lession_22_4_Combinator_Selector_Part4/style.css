@@ -1,0 +1,26 @@
+p {
+  font-size: 25px;
+}
+
+/* Chọn thẻ h2 đứng liền sau thẻ h1 thì dùng dấu +*/
+h1 + h2 {
+  color: red;
+  /* Kết quả: Thẻ h2 nằm ngay sau thẻ h1 đã bị tác động. Cho dùng có bao nhiêu h2 ở sau h1 đi chăng nữa thì nó chỉ
+  tác động đến h2 ở ngay sau h1 */
+}
+
+/* Sau đây không chọn thẻ nữa thay vào đó sẽ chọn 1 thẻ đứng sau 1 class */
+.demo + h3 {
+  color: blue;
+}
+
+/* Chọn tất cả thẻ h3 đứng sau thẻ h2 có class là demo*/
+.demo ~ h4 {
+  color: deeppink;
+}
+
+/* Hoặc chọn 1 khối div đằng sau 1 khối div hay chính xác hơn là chọn tất cả khối div đằng sau khối div
+div ~ div {
+    code here ...
+}
+*/
