@@ -1,0 +1,23 @@
+/* Tác động đến tất cả thẻ p nằm trong thẻ div: div p{code here}. Dấu space ở đây được hiểu div là cha, p là con */
+div p {
+  color: red;
+}
+
+/* Tác động đến thẻ p nằm trong thẻ có class là loichuc. Chọn tất cả thẻ p nằm trong class lời chúc */
+.loichuc p {
+  font-size: 30px;
+}
+
+.divGreaterThan > p {
+  /* Không chỉ riêng p mà các thẻ nào cùng cấp với p đều có thể dính css được */
+  color: rebeccapurple;
+}
+
+blockquote > p {
+  /* Tác động đến thẻ p là con trực tiếp của blockquote */
+  color: chartreuse;
+  font-size: 25px;
+}
+
+/* Nếu muốn tác động đến tất cả các con của thẻ nào đó thì dùng space nhé, ở trên đó */
+/* Còn muốn tác động đến thẻ con trực tiếp, bỏ qua cháu chắt thì dùng greater than nhé*/

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Space Selector And Greater Than Selector</title>
+  </head>
+  <body>
+    <h2>
+      Hôm nay chúng ta sẽ học về Space Selector, sử dụng khoảng trắng để ngăn
+      cách giữa các khoảng cách trong bộ chọn kết hợp và
+    </h2>
+    <p>
+      Giả sử ta viết div p nó sẽ có nghĩa là: Select all &lt;p&gt; elements
+      inside &lt;div&gt; elements
+    </p>
+
+    <table>
+      <tr>
+        <td>|STT|</td>
+        <td colspan="2">|Ký Tự Kết Hợp|</td>
+        <td colspan="2">|Nội Dung|</td>
+        <td colspan="3">|Ý Nghĩa|</td>
+      </tr>
+      <tr>
+        <td>|1|</td>
+        <td colspan="2">|Space|</td>
+        <td colspan="2">|Selector1[space]Selector2|</td>
+        <td colspan="3">|S2 là con của S1|</td>
+      </tr>
+    </table>
+
+    <!-- Demo -->
+    <h1>Practice make perfect</h1>
+    <!-- Sử dụng emmet để tạo thẻ h2 có chứa class demo = cách: h2.demo -->
+    <h2 class="demo">Hello I'm Cristiano Ronaldo</h2>
+    <!-- Sử dụng emmet để tạo thẻ h3 có chứa class demo và demo2 = cách: h2.demo.demo2 -->
+    <h3 class="demo demo2">Practice day by day</h3>
+    <!-- Tạo ra thẻ h3 có id là line4: h3#line4 -->
+    <h3 id="line4">Better than yesterday</h3>
+    <h3>Never Give Up</h3>
+    <!-- Tạo ra thẻ div bên trong có chứa 3 thẻ p, mỗi thẻ p có văn bản là Đoạn văn 1-n: div>p*3{Đoạn văn $} -->
+    <div>
+      <p>Đoạn văn 1</p>
+      <p>Đoạn văn 2</p>
+      <p>Đoạn văn 3</p>
+    </div>
+    <!-- Tạo ra thẻ div có class là loichuc bên trong có chứa 2 thẻ p, mỗi thẻ p có văn bản là: 
+     "Chúc các bạn học tốt": div.loichuc>p*2{Chúc các bạn học tốt $} -->
+    <div class="loichuc">
+      <p>Chúc các bạn học tốt 1</p>
+      <p>Chúc các bạn học tốt 2</p>
+    </div>
+
+    <!-- Sử dụng dấu Greater Than để tác động lên thẻ con trực tiếp (Gần nhất) -->
+    <table>
+      <tr>
+        <td>|STT|</td>
+        <td colspan="2">|Ký Tự Kết Hợp|</td>
+        <td colspan="2">|Nội Dung|</td>
+        <td colspan="3">|Ý Nghĩa|</td>
+      </tr>
+      <tr>
+        <td>|2|</td>
+        <td colspan="2">|Greater Than|</td>
+        <td colspan="2">|Selector1>Selector2|</td>
+        <td colspan="3">|S2 là con trực tiếp của S1|</td>
+      </tr>
+    </table>
+    <!-- Ví dụ -->
+    <div class="divGreaterThan">
+      <p>Tôi đang tự học HTML CSS</p>
+      <!-- Thẻ <p> này được gọi là  con trực tiếp của thẻ div-->
+      <blockquote>
+        <p>Có làm thì mới có ăn</p>
+        <!-- Thẻ <p> này lại không phải là con trực tiếp của thẻ div, mà phải là thẻ block. 
+            Thẻ block cùng cấp với nó nên ta gọi nó là con trực tiếp của div-->
+      </blockquote>
+    </div>
+  </body>
+</html>
