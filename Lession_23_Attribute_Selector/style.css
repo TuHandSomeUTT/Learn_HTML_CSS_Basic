@@ -1,0 +1,18 @@
+/* Chọn thẻ có thuộc tính là href. Khi chọn thuộc tính(Attribute) ta cần đặt nó trong cặp dấu ngoặc
+vuông */
+[href] {
+  color: deeppink;
+  /* Kết quả: 3 thẻ có attribute là href đã dính chưởng CSS */
+}
+
+/* Nếu có nhiều thẻ khác nhau mang thuộc tính là href nhưng ta chỉ cần thẻ a dính CSS thì sao?
+Áp dụng bài cũ Combinator Selector nào 
+a[href] {
+  color: aqua;
+}
+*/
+
+/* Áp dụng css cho thẻ nào mang thuộc tính target=blank */
+[target="_blank"] {
+  color: blueviolet;
+}
