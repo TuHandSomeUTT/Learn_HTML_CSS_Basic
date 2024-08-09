@@ -1,0 +1,16 @@
+/* Tác động CSS đến tất cả các thẻ mà ở trong title attribute có chứa từ tuhoc.cc */
+[title~="tuhoc.cc"] {
+  color: deeppink;
+}
+
+/* Tác động CSS lên thẻ a cụ thể trong title attribute có chứa từ tuhoc.bbc */
+a[title~="tuhoc.bbc"] {
+  color: lawngreen;
+}
+
+/* Tác động CSS vào thẻ có phần title bắt đầu bằng từ "pic". Lưu ý là bắt đầu bằng từ pic nhé
+pic ở chỗ nào khác cũng không được tính, pic mà nối với từ nào cũng không được tính */
+[title|="pic"] {
+  font-size: 25px;
+  color: brown;
+}

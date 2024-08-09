@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Attribute Selectors Part2</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>STT</td>
+        <td>Syntax</td>
+        <td>Example</td>
+        <td>Ý nghĩa</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>[attribute~=value]</td>
+        <td>[title~="pic"]</td>
+        <td>
+          Chọn tất cả thuộc tính: title có chứa từ pic trong giá trị (Lưu ý là
+          thuộc tính này đứng đơn lẻ, chúng không dính vào nhau nhé kiểu như ccb
+          mặc dù có cc nhưng nó không phải là cc đơn lẻ)
+        </td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>[attribute*=value]</td>
+        <td>[tittle*="tuhoc.cc"]</td>
+        <td>
+          Chọn tất cả thuộc tính mà trong phần title nó có value = tuhoc.cc bất
+          kể trong chuỗi nó trông như thế này đi nữa thì CSS vẫn sẽ được áp
+          dụng: adfjadjftuhoc.ccaisfuasfh nó vẫn hiểu là trong chuỗi này có chứa
+          tuhoc.cc
+        </td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>[attribute|=value]</td>
+        <td>[title|="pic"]</td>
+        <td>
+          Chọn tất cả thuộc tính title có từ duy nhất bắt đầu bằng từ pic: pic,
+          pic1, pic-123, ... Có thể hiểu là 1 từ duy nhất, 1 là bắt đầu bằng từ
+          pic, 2 là các từ bắt đầu là pic và sau nó là các từ khác nhưng bắt
+          buộc phải nối nhau bằng dấu -. Ví dụ pic-123
+        </td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td>[attribute^=value]</td>
+        <td>[title^="pic"]</td>
+        <td>
+          Chọn tất cả thuộc tính tittle có từ bắt đầu là pic (không quan tâm
+          space phía sau pic). Có pic ở đầu tiên là nhận
+        </td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td>[attribute$=value]</td>
+        <td>[title$="1"]</td>
+        <td>
+          Chọn tất cả thuộc tính kết thúc bằng ký tự "1" hoặc ký tự bất kỳ nhập
+          vào rồi nó sẽ tìm để áp dụng css
+        </td>
+      </tr>
+    </table>
+
+    <!-- Demo attribute selector: [attribute~=value] -->
+    <a href="https://tuhoc.cc" target="_blank" title="tuhoc.cc trang chu"
+      >Click me 2</a
+    >
+    <a href="https://tuhoc.cc" target="_blank" title="tuhoc.ccb trang chu"
+      >Click me 1</a
+    >
+    <a href="https://tuhoc.cc" target="" title="tuhoc.bbc trang chu"
+      >Click me 3</a
+    >
+    <br />
+
+    <!-- Demo attribute selector: [attribute|=value] -->
+    <a href="" title="pic">Move to tuhoc.cc</a> <br />
+    <a href="" title="pic-01032003">Commute to tuhoc.cc</a> <br />
+    <!-- 2 thằng này không tác động css |= được là do từ pic của nó không nối với các từ phía sau
+      bằng dấu trừ - và từ pic của nó không đứng ở đầu tiên-->
+    <a href="" title="pic_01032003">Commute to tuhoc.cc</a> <br />
+    <a href="" title="abc pic-01032003">Commute to tuhoc.cc</a> <br />
+    <!-- 2 thằng này cũng không ăn css attribute |= được do pic nó không nối với từ phía sau bằng
+      dấu trừ và từ pic2 kia nó không phải là pic đơn lẻ-->
+    <a href="" title="pic 01032003">Commute to tuhoc.cc</a> <br />
+    <a href="" title="pic2">Commute to tuhoc.cc</a>
+  </body>
+</html>
