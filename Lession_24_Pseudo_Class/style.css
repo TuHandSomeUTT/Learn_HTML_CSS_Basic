@@ -1,0 +1,37 @@
+/* Tóm tắt hover là di chuột vào 1 phần tử HTML */
+p.p1:hover {
+  /* Áp dụng hover với thẻ p có class là p1 */
+  font-size: 25px;
+  color: deeppink;
+}
+
+h1:hover {
+  /*Áp dụng hover với tất cả các thẻ h1*/
+  font-size: 30px;
+  color: red;
+}
+
+p#pcr7:hover {
+  /* Áp dụng hover cho thẻ p có id là pcr7 */
+  font-size: 5px;
+  color: chartreuse;
+}
+
+p.pcr9:hover {
+  /* Áp dụng CSS cho thẻ p có class là test */
+  font-size: 35px;
+  color: aqua;
+}
+
+/* Demo CSS Active */
+p.pcr11:active {
+  /* Áp dụng css active cho thẻ p có class tên là pcr11 */
+  font-size: 55px;
+  color: chartreuse;
+}
+
+p#pcr17:active {
+  /* Áp dụng css active cho thẻ p có id là pcr17 */
+  font-size: 15px;
+  color: rgb(5, 96, 129);
+}

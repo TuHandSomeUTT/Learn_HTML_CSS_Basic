@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pseudo Class</title>
+  </head>
+  <body>
+    <h1>Hôm nay chúng ta sẽ học về Pseudo Class</h1>
+    <p class="p1">
+      Hiểu đơn giản thì Pseudo Class là cách áp dụng CSS để tạo ra các hiệu ứng
+      cho thuộc tính HTML. Ví dụ, bạn có thể thay đổi màu sắc của liên kết khi
+      nó được nhấp, hoặc thay đổi nền của một ô nhập liệu khi nó đang được chọn
+      (focus).<br />Hôm nay chúng ta sẽ học về hover và active. <br />
+      - hover là khi ta di chuột qua 1 phần tử HTML nào đó thì nó sẽ có những
+      biến đổi <br />
+      - active là khi ta nhấn giữ chuột vào 1 phần tử HTML thì nó sẽ có biến
+      đổi.
+    </p>
+
+    <p class="p2">
+      - Hover syntax: <br />
+      Đầu tiên là phần tử HTML tiếp đó là dấu 2 chấm sau đó đến hover | Ví dụ:
+      p:hover - Tức là chọn các thẻ &lt;p&gt; khi chuột được đi qua. <br />
+      Ngoài các tag name ra thì ta cũng có thể sử dụng id, class để hover cho
+      thuộc tính <br />
+      - Active syntax: <br />
+      :active | Ví dụ: a:active - Tức là chọn các thẻ &lt;a&gt; khi nhấn giữ
+      chuột
+    </p>
+
+    <!-- Demo hover -->
+    <p id="pcr7">Hello. I'm Cristiano Ronaldo</p>
+    <p class="pcr9">I'm test CSS Hover</p>
+
+    <!-- Demo active -->
+    <p id="pcr17">Hello. I'm Cristiano Ronaldo</p>
+    <p class="pcr11">I'm test CSS Hover</p>
+  </body>
+</html>
