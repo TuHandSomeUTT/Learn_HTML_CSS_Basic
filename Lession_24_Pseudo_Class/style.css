@@ -18,7 +18,7 @@ p#pcr7:hover {
 }
 
 p.pcr9:hover {
-  /* Áp dụng CSS cho thẻ p có class là test */
+  /* Áp dụng CSS cho thẻ p có class là pcr9 */
   font-size: 35px;
   color: aqua;
 }
@@ -34,4 +34,16 @@ p#pcr17:active {
   /* Áp dụng css active cho thẻ p có id là pcr17 */
   font-size: 15px;
   color: rgb(5, 96, 129);
+}
+
+/* Demo link khi chưa truy cập cho thẻ a */
+a.click_me:link {
+  color: rgb(54, 210, 30);
+  font-size: 25px;
+}
+
+/* Trái ngược với link là visited có nghĩa là khi người dùng đã click vào thì sự kiện visited sẽ được kích hoạt */
+a.click_me:visited {
+  color: rgb(213, 17, 43);
+  font-size: 25px;
 }

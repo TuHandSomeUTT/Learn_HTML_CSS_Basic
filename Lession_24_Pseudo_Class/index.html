@@ -25,9 +25,22 @@
       p:hover - Tức là chọn các thẻ &lt;p&gt; khi chuột được đi qua. <br />
       Ngoài các tag name ra thì ta cũng có thể sử dụng id, class để hover cho
       thuộc tính <br />
+
       - Active syntax: <br />
       :active | Ví dụ: a:active - Tức là chọn các thẻ &lt;a&gt; khi nhấn giữ
-      chuột
+      chuột <br />
+
+      - :link syntax: <br />
+      Đầu tiên là phần tử HTML tiếp đó là dấu 2 chấm sau đó đến link <br />
+      Ví dụ a:link | Nghĩa là chọn các thẻ &lt;a&gt; có liên kết chưa được click
+      vào. Hiểu đơn giản là những link chưa được click vào thì có màu khác với
+      những cái đã được click <br />
+
+      - :visited syntax: <br />
+      Đầu tiên là phần tử HTML tiếp đó là dấu 2 chấm sau đó đến visited <br />
+      Ví dụ a:visited | Chọn các thẻ &lt;a&gt; có liên kết đã được click vào.
+      Hiểu đơn giản là những link đã được click vào thì có màu khác với những
+      cái chưa được click
     </p>
 
     <!-- Demo hover -->
@@ -37,5 +50,13 @@
     <!-- Demo active -->
     <p id="pcr17">Hello. I'm Cristiano Ronaldo</p>
     <p class="pcr11">I'm test CSS Hover</p>
+
+    <!-- Demo link -->
+    <a href="https://tuhoc.cc" class="click_me" target="_blank">Click me bro</a
+    ><br />
+    <a href="https://titv.vn" class="click_me" target="_blank">Click me bro</a>
+    <!-- Ứng dụng thực tế: Các website đọc báo, đọc truyện nên làm vậy khi người dùng bấm vào 1 truyện nào đó thì nên có 
+     đánh dấu cho người ta biết là mình đã đọc truyện này rồi để khách không bị mất thời gian, từ đó giúp tăng trải nhiệm
+     người dùng -->
   </body>
 </html>
