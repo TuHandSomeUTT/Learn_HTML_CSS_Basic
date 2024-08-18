@@ -20,27 +20,36 @@
     </p>
 
     <p class="p2">
-      - Hover syntax: <br />
+      1- Hover syntax: <br />
       Đầu tiên là phần tử HTML tiếp đó là dấu 2 chấm sau đó đến hover | Ví dụ:
       p:hover - Tức là chọn các thẻ &lt;p&gt; khi chuột được đi qua. <br />
       Ngoài các tag name ra thì ta cũng có thể sử dụng id, class để hover cho
       thuộc tính <br />
 
-      - Active syntax: <br />
+      2- Active syntax: <br />
       :active | Ví dụ: a:active - Tức là chọn các thẻ &lt;a&gt; khi nhấn giữ
       chuột <br />
 
-      - :link syntax: <br />
+      3- :link syntax: <br />
       Đầu tiên là phần tử HTML tiếp đó là dấu 2 chấm sau đó đến link <br />
       Ví dụ a:link | Nghĩa là chọn các thẻ &lt;a&gt; có liên kết chưa được click
       vào. Hiểu đơn giản là những link chưa được click vào thì có màu khác với
       những cái đã được click <br />
 
-      - :visited syntax: <br />
+      4- :visited syntax: <br />
       Đầu tiên là phần tử HTML tiếp đó là dấu 2 chấm sau đó đến visited <br />
-      Ví dụ a:visited | Chọn các thẻ &lt;a&gt; có liên kết đã được click vào.
-      Hiểu đơn giản là những link đã được click vào thì có màu khác với những
-      cái chưa được click
+      Ví dụ a:visited | Nghĩa là chọn các thẻ &lt;a&gt; có liên kết đã được
+      click vào. Hiểu đơn giản là những link đã được click vào thì có màu khác
+      với những cái chưa được click <br />
+
+      5- :empty syntax: <br />
+      Đầu tiên là phần tử HTML tiếp đó là dấu 2 chấm sau đó đến empty <br />
+      Ví dụ div:empty | Nghĩa là chọn các thẻ &lt;div&gt; không có nội dung.
+      <br />
+
+      6- :target syntax: <br />
+      Ví dụ: #home:target | Nghĩa là chọn thẻ có id="home" khi trên URL có hash
+      tương ứng. Tức là nó sẽ tạo kiểu cho các phần tử có id là home.
     </p>
 
     <!-- Demo hover -->
@@ -58,5 +67,47 @@
     <!-- Ứng dụng thực tế: Các website đọc báo, đọc truyện nên làm vậy khi người dùng bấm vào 1 truyện nào đó thì nên có 
      đánh dấu cho người ta biết là mình đã đọc truyện này rồi để khách không bị mất thời gian, từ đó giúp tăng trải nhiệm
      người dùng -->
+
+    <!-- Demo empty (Sử dụng emet tạo các phần tử HTML cho nhanh: div.elm -> tab)-->
+    <div class="elm"></div>
+
+    <!-- Demo pseudo target. Chẳng hạn ta muốn khi bấm vào mở bài thì trình duyệt sẽ điều hướng đến mở bài, ... bấm thân
+     bài thì nhảy tới thân bài, kết bài thì nhảy tới kết bài thông qua id của phần tử HTML-->
+    <h1>Focus on yourself not others</h1>
+    <ul>
+      <li>
+        <a href="#mobai">Chuyển đến phần mở bài</a>
+      </li>
+      <li>
+        <a href="#thanbai">Chuyển đến phần thân bài</a>
+      </li>
+      <li>
+        <a href="#ketbai">Chuyển đến phần kết bài</a>
+      </li>
+    </ul>
+
+    <h2 id="mobai">Mở bài</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic molestias
+      eveniet voluptatum dolorem odit voluptatibus veritatis praesentium autem
+      sequi tempora accusantium quos repudiandae
+    </p>
+
+    <h2 id="thanbai">Thân bài</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At, voluptate
+      maxime possimus iusto cum vitae delectus facere, assumenda ullam animi ab,
+      facilis illum. Numquam, accusantium. Esse autem, veniam dolorum ex atque
+      officia, porro exercitationem molestias, nulla laudantium mollitia
+      voluptatibus minima a debitis perspiciatis optio pariatur obcaecati
+      officiis saepe nam ea?
+    </p>
+
+    <h2 id="ketbai">Kết bài</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo
+      est deleniti dolores dolore praesentium magnam, itaque voluptatum, iste,
+      corrupti quod porro ab hic ad velit. Commodi accusamus magnam culpa.
+    </p>
   </body>
 </html>

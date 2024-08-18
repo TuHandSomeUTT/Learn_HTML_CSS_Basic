@@ -23,7 +23,7 @@ p.pcr9:hover {
   color: aqua;
 }
 
-/* Demo CSS Active */
+/* Demo CSS Active. Tóm tắt active là sự kiện khi ta nhấn giữ vào 1 phần tử HTML */
 p.pcr11:active {
   /* Áp dụng css active cho thẻ p có class tên là pcr11 */
   font-size: 55px;
@@ -46,4 +46,22 @@ a.click_me:link {
 a.click_me:visited {
   color: rgb(213, 17, 43);
   font-size: 25px;
+}
+
+/* Demo empty. Áp dụng cho selector mà bên trong nó rỗng, div bên trong rỗng thì nó mới nhận được CSS này, thêm nội dung
+vào phát là không nhận CSS nữa */
+div.elm:empty {
+  width: 200px;
+  height: 200px;
+  background-color: deeppink;
+}
+
+/* Demo target*/
+h2:target {
+  /* Tức là những thẻ a nào có phần href bằng với hash# của các phần tử HTML thì nó sẽ điều hướng đến đó và áp dụng CSS
+  cho các target đó. 
+  Chẳng hạn như bên kia có thẻ h2 có id là mobai
+  Thẻ a có href là mobai
+  Thì trường hợp này khi ta bấm vào thẻ a thì nó sẽ điều hướng đến với thẻ h2 có id là mobai và selector đến thẻ h2 đó*/
+  color: red;
 }
