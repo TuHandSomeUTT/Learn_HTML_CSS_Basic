@@ -1,0 +1,42 @@
+p:first-of-type {
+  /* Có nghĩa là chọn phần tử p đầu tiên trong web pages hoặc của thẻ cha, không quan tâm phía
+    trước nó có thẻ nào khác, chỉ cần là thẻ p xuất hiện đầu tiên trong 1 khối nào đó thì nó sẽ được áp dụng css
+    khác với p:first-child nó chỉ áp dụng nếu p là con đầu tiên (tức là phía trước nó không 
+    có thẻ nào nữa thì mới ăn css)*/
+  color: blueviolet;
+  font-size: 30px;
+}
+
+p:last-of-type {
+  /* Chọn phần tử p ở cuối cùng của web pages hoặc của trong thẻ cha để áp dụng .Không quan
+  tâm phía sau thẻ p còn thẻ nào khác, chỉ cần là thẻ p cuối cùng sẽ được chọn. Còn 
+  nth-last-child thì sẽ chọn đúng thẻ con cuối cùng, và phải là nằm cuối cùng nó mới chọn */
+  color: chartreuse;
+  font-size: 25px;
+}
+
+h2:nth-of-type(2) {
+  /* Chọn các phần tử xuất hiện thứ n trong thẻ cha. nth-last-of-type sẽ tác động lên thẻ p
+  xuất hiện lần thứ 2 lưu ý là xuất hiện là thứ 2 nhé (áp dụng trong trường hợp này) còn
+  nth-child thì nó sẽ tác động đến thẻ p ở vị trí thứ 2, tức là trước nó có là thẻ khác p
+  thì nó cũng tính đó là con thứ nhất rồi (nó tính theo vị trí chứ không theo lần xuất hiện như
+  nth-last-of-type)*/
+  color: brown;
+  font-size: 50px;
+}
+
+h2:nth-last-of-type(2) {
+  /* Áp dụng cho phần tử h2 xuất hiện lần thứ 2 từ dưới lên trên */
+  color: green;
+}
+/* Type selector cũng có thể áp dụng các bước nhảy odd(nhảy theo n lẻ), even(nhảy theo n chẵn)
+, 2n+1(nhảy bước nhảy mong muốn) */
+
+h3:only-of-type {
+  /* only-of-type để chỉ 1 phần tử con duy nhất nằm trong 1 phần tử cha. Khác với only-child
+  (Chỉ nhận duy nhất 1 con, nếu có con khác thì nó sẽ không css), còn với only-of-type thì 
+  nó không quan tâm có bao nhiêu phần tử con, nó chỉ quan tâm phần tử đó có phải là duy nhất
+  hay không, còn phía trước, sau nó có bao nhiêu phần tử cũng chẳng quan tâm */
+  color: blue;
+  font-size: 30px;
+}
