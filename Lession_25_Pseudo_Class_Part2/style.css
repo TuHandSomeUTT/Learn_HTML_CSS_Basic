@@ -1,0 +1,32 @@
+/* Tác động CSS Selector lên thẻ con đầu tiên p:first-child. Lưu ý nếu trước thẻ p có 1 thẻ nào đó thì css sẽ không
+được áp dụng vì p không phải là con đầu tiên */
+p:first-child {
+  color: deeppink;
+}
+
+/* Tác động CSS đến phần tử cuối cùng trong 1 khối div */
+p:last-child {
+  font-size: 35px;
+}
+
+/* Tác động CSS đến thẻ con thứ n từ trên xuống. Ví dụ p:nth-child(n) tác động đến thẻ p thứ n từ trên xuống dưới. Cũng
+có thể css cho các con lẻ, chẵn, bước nhảy ngẫu nhiên*/
+p:nth-child(2) {
+  /* Tác động CSS đến thẻ p là con thứ 2 của 1 khối */
+  color: chartreuse;
+  font-size: 30px;
+}
+
+/* Tác động CSS đến thẻ con thứ 2 từ dưới lên. Ví dụ P:nth-last-child(n) tác động lên thẻ p thứ n từ dưới lên. Cũng
+có thể css cho các con lẻ, chẵn, bước nhảy ngẫu nhiên*/
+p:nth-last-child(1) {
+  color: rgb(247, 11, 11);
+  font-size: 25px;
+}
+
+/* Only child | Ví dụ: p:only-child | Chọn các thẻ p là thẻ con duy nhất. Tức là chỉ ăn CSS khi p là thẻ con duy nhất, 
+nếu có bất kỳ thẻ nào khác nữa thì css sẽ không nhận vì nó không phải là con duy nhất*/
+p:only-child {
+  color: gold;
+  font-size: 30px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pseudo Class Part2 - Child Selector</title>
+  </head>
+  <body>
+    <div>
+      <p>Đoạn 1</p>
+      <p>Đoạn 2</p>
+      <p>Đoạn 3</p>
+    </div>
+
+    <div class="demo">
+      <!-- emmet: .demo>div*4{Nội dung thứ $}-->
+      <p>Nội dung thứ 1</p>
+      <!-- Nội dung này sẽ được áp dụng css vì nó là p:first-child của thẻ div-->
+      <p>Nội dung thứ 2</p>
+      <p>Nội dung thứ 3</p>
+      <p>Nội dung thứ 4</p>
+    </div>
+
+    <div>
+      <p>Only child</p>
+    </div>
+  </body>
+</html>
