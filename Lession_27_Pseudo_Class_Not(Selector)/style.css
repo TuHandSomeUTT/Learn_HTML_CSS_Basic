@@ -1,0 +1,10 @@
+/* Chọn tất cả các thẻ có class là top, loại trừ thẻ p. */
+.top:not(p) {
+  color: deeppink;
+}
+
+/* Selector có thể là bất kỳ bộ trọn nào ta đã học. Hoàn toàn có thể áp dụng pseudo class */
+.top:not(:first-of-type) {
+  /* Chọn các phần tử có class là top. Loại trừ các thẻ xuất hiện lần đầu */
+  background-color: greenyellow;
+}

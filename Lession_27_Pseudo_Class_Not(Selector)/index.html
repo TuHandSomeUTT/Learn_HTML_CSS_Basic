@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Learn About Pseudo Class Not(Selector)</title>
+  </head>
+  <body>
+    <h1>
+      Not Selector dùng để loại trừ 1 phần tử nào đó để không tác động CSS lên
+      nó
+    </h1>
+    <p>
+      Syntax: Example: .top:not(p): Tức là chọn tất cả các thẻ mang class là
+      "top" ngoại trừ thẻ p (Có thể thay class bằng id cũng được)
+      <br />
+      not(selector) | Ví dụ: .top:not(p) | Tức là chọn class có tên là top nhưng
+      loại trừ các thẻ &lt;p&gt;
+    </p>
+
+    <!-- Demo -->
+    <div>
+      <h1 class="top">Shelf Learning</h1>
+      <p class="top">Tự Học Lập Trình</p>
+      <h2 class="top">Tự học tiêu đề thứ 2</h2>
+      <p class="top">
+        Thẻ này là thẻ p thứ 2 nên nó sẽ có màu nền là xanh lá cây nhạt do ta áp
+        dụng selector lên nó: .top:not(:first-of-type) | Chọn những thẻ mà có
+        class là top và không phải là phần tử xuất hiện lần đầu trong khối. Lưu
+        ý là not xuất hiện lần đầu nhé, không phải là con đầu tiên đâu.
+      </p>
+      <p class="top">
+        Thằng này cũng được tô màu vì nó không phải là thẻ đầu tiên nên nó không
+        bị loại trừ
+      </p>
+      <h2 class="top">
+        Thẻ h2 này cũng được tô màu vì nó không phải là thẻ h2 xuất hiện lần đầu
+        tiên
+      </h2>
+    </div>
+  </body>
+</html>

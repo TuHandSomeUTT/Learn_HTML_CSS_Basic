@@ -1,5 +1,5 @@
 p:first-of-type {
-  /* Có nghĩa là chọn phần tử p đầu tiên trong web pages hoặc của thẻ cha, không quan tâm phía
+  /* Có nghĩa là chọn phần tử p đầu tiên của thẻ cha, không quan tâm phía
     trước nó có thẻ nào khác, chỉ cần là thẻ p xuất hiện đầu tiên trong 1 khối nào đó thì nó sẽ được áp dụng css
     khác với p:first-child nó chỉ áp dụng nếu p là con đầu tiên (tức là phía trước nó không 
     có thẻ nào nữa thì mới ăn css)*/
