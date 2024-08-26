@@ -14,7 +14,7 @@ h1 + h2 {
   color: blue;
 }
 
-/* Chọn tất cả thẻ h3 đứng sau thẻ h2 có class là demo*/
+/* Chọn tất cả thẻ h4 đứng sau thẻ h2 có class là demo*/
 .demo ~ h4 {
   color: deeppink;
 }

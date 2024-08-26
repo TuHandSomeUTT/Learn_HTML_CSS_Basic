@@ -1,0 +1,24 @@
+/* Dấu * (Hay còn gọi là Universal Selector) là dùng để chọn tất cả các phần tử HTML. Nó cũng là selector có độ ưu tiên thấp nhất */
+* {
+  background-color: deeppink;
+  color: white !important;
+}
+
+/* Element Selector. Tức là chọn phần tử HTML cụ thể. Selector này thứ tự ưu tiên cao hơn Universal Selector*/
+h1 {
+  color: black; /* Nó đã ghi đè lên cái bên trên và đổi từ chữ trắng -> đen*/
+}
+
+/* Class - Pseudo Class */
+.demo {
+  color: green; /* Đã ghi đè lên Element Selector và đổi màu chữ từ màu đen sang xanh lá cây*/
+}
+
+/* Mạnh hơn Class - Pseudo Class là id */
+#testcss {
+  color: red; /* Những Element mang id là testcss đã ghi đè lên class và thay đổi màu chữ sang màu đỏ*/
+}
+
+/* Mạnh thứ nhì là Inline Style */
+/* Cuối cùng, mạnh nhất là !important. Universal Selector là yếu nhất nhưng sẽ ra sao nếu ta thêm dấu chấm than !important?
+Ngay lập tức nó sẽ ghi đè lên tất cả vì nó được ưu tiên nhất*/
