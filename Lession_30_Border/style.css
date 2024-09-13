@@ -1,0 +1,50 @@
+/* Viền - Border là phần bao bọc cả padding (đệm) và phần content*/
+div {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: deeppink;
+  padding: 20px;
+
+  /* Cú pháp viết tắt: Syntax: line width | line style | color. */
+
+  border: 10px double greenyellow;
+  /* Nếu chỉ muốn tô viền 1 góc nào đó thì: 
+  border-top: viền trên
+  border-bottom: viền dưới
+  border-right: viền phải
+  border-left: viền trái*/
+  /* border-top: 10px solid orange;
+  border-bottom: 10px double blueviolet; */
+
+  /* Cú pháp viết tường minh: */
+  /* border-style: groove solid dashed dotted; Viền nét liền nhỏ - nét liền) */
+  /* border-width: 10px 20px 30px 40px; Trên, phải, dưới, trái. Theo chiều kim đồng hồ. Muốn xem thứ tự thì về bài padding nha */
+  /* border-color: cadetblue chartreuse chocolate darkred; */
+  /* Thậm chí còn có thể áp dụng riêng rẽ kiểu viền, màu viền cho từng cạnh (trên, dưới, trái, phải) */
+
+  /* Border-radius: Bo viền góc. Cái này chia sẽ khác với border bình thường, sẽ có:
+  Top left: Góc trên bên trái
+  Top right: Góc trên ở bên phải
+  Bottom left: Góc dưới bên trái
+  Bottom right: Góc dưới bên phải
+  Đối số cho từng trường hợp:
+  border-radius: 30px thì nó sẽ hiểu là áp dụng cho cả 4 góc (đây là th 1 đối số)
+  border-radius: 30px 40px trên trái, dưới phải
+  */
+
+  /* border-radius: 30px; */
+  /* Bo từng góc riêng lẻ */
+  /* border-top-left-radius: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 50px; */
+
+  /* Viết tắt */
+  /* border-radius: 30px; Bo bốn góc */
+  /* border-radius: 30px 5px; 30 là góc trên bên trái và góc dưới bên phải, 5 dành cho góc trên phải và dưới trái */
+  /* border-radius: 30px 5px 80px; 30 là góc trên bên trái, 5 dành cho góc trên phải và dưới trái, 80 dành cho góc dưới phải */
+  /* border-radius: 30px 5px 80px 50px; 30 là góc trên bên trái, 5 dành cho góc trên phải, 80 dành cho góc dưới phải, 50 dành cho góc dưới trái. Theo chiều kim đồng hồ: Trên trái, trên phải, dưới trái, dưới phải */
+
+  border-radius: 10px 20px 50px 100px;
+}

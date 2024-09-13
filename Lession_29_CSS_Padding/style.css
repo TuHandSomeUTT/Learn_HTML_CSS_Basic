@@ -1,0 +1,20 @@
+/* padding là khoảng đệm giữa content và border */
+div {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: deeppink;
+  /* Nếu ta gõ padding 25px thì trình duyệt sẽ hiểu là thêm khoảng đệm cho 4 góc bao xung quanh content */
+  /* padding: 25px; */
+  /* padding-top: 20px; đệm trên*/
+  /* padding-bottom: 20px; đệm dưới*/
+  /* padding-right: 20px; đệm phải*/
+  /* padding-left: 20px; đệm trái*/
+
+  /* Nếu cứ mỗi hướng lại viết một dòng như vậy sẽ rất tường minh dễ hiểu nhưng lại làm code bị dài và nặng hơn, 
+  do đó ta cũng cần học cách sử dụng cách viết tắt số lượng tham số truyền vào: */
+  /* padding: 20px; Trên - dưới - trái - phải*/
+  /* padding: 20px 30px; Trên dưới 20, trái phải 30*/
+  /* padding: 20px 10px 30px; trên 20 | trái, phải 10 | dưới 30 */
+  /* padding: 20px, 30px, 40px, 50px; theo chiều thuận kim đồng hồ: trên 20, phải 30, dưới 40, trái 50 */
+}
