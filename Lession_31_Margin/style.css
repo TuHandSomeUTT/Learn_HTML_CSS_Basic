@@ -1,0 +1,18 @@
+.box {
+  width: 210px;
+  height: 200px;
+  background-color: chocolate;
+  padding: 10px 20px 30px 40px;
+  border: 10px solid greenyellow;
+  /* Hai khối đang dính vào nhau. Thêm margin để tách 2 phần tử block đó ra nhưng không làm ảnh hưởng đến kích thước của phần tử đâu nhé */
+  /* margin: 15px; để 1 đối số đồng nghĩa với 4 góc đều có margin 15px */
+  /* margin: 15px 20px; Cái này là 15px trên dưới, 20px cho trái phải */
+  /* margin: 15px 20px 30px; cái này là trên 15px, dưới 30px, và trái phải 20px */
+  /* margin: 15px 20px 30px 40px; Cài này thì theo chiều kim đồng hồ: trên 15, phải 20, dưới 30, trái 40 */
+
+  /* Cũng có thể set cho từng cạnh 1 */
+  /* margin-top: 10px; cái này để set margin cho góc trên là 10px */
+  /* margin-left: 10px; cái này để set margin cho góc trái là 10px */
+  /* margin-right: 10px; cái này để set margin cho góc phải là 10px */
+  /* margin-bottom: 10px; cái này để set margin cho góc dưới là 10px */
+}
