@@ -1,0 +1,22 @@
+.box {
+  width: 210px;
+  height: 200px;
+  background-color: crimson;
+}
+/* Để làm bài này ta cần biết cách tính kích thước phần tử, kích thước phần tử tính từ border hất vào trong content (không tính margin). 
+chiều rộng sẽ đứng trước sau đó đến chiều cao. Tính bằng cách cộng border + padding + content là ra kích thước phần tử.
+Lên trình duyệt bấm F12 rồi kiểm tra ở phần computed, để tính chiều rộng ta tính từ phải qua trái, cộng hết vào là ra,
+chiều cao thì cộng từ trên xuống nhé. Nếu đã biết cách tính rồi thì di con trỏ chuột vào block là sẽ hiện ra kích thước luôn */
+.box1 {
+  border: greenyellow solid 10px;
+}
+
+.box2 {
+  border: gold solid 20px;
+  margin-left: 229.2px;
+}
+
+.box3 {
+  border: coral solid 30px;
+  margin-left: 479.2px;
+}
