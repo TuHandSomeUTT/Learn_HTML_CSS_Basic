@@ -1,0 +1,21 @@
+.avatar {
+  width: 200px;
+  height: 200px;
+  border: 2px solid pink;
+  border-radius: 50%;
+  margin-left: -50px;
+}
+
+.avatar:first-child {
+  /* Phần tử con đầu tiên của class avatar đang bị thụt vào bên trái 70px, cần set nó về 0*/
+  margin-left: 0px;
+}
+
+.content {
+  background-color: #7e79d4;
+  padding: 40px;
+}
+
+div {
+  display: inline-block;
+}

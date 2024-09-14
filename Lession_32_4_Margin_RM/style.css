@@ -1,0 +1,17 @@
+.avatar {
+  width: 200px;
+  height: 200px;
+  border: 3px solid greenyellow;
+  border-radius: 50%;
+  margin-left: -50px;
+}
+
+.avatar:first-child {
+  margin-left: 0px;
+}
+
+.container {
+  background-color: #a666f5;
+  display: inline-block;
+  padding: 40px;
+}
