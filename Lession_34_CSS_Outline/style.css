@@ -1,0 +1,15 @@
+.box1 {
+  width: 200px;
+  height: 200px;
+  /* border: 5px solid darkcyan; */
+  outline: 20px solid yellowgreen; /* Chỉ số nó mà lớn hơn margin thì nó sẽ che lấp luôn cả margin
+  có thẻ nào phía trước nó thì nó cũng đè lên luôn*/
+  margin: 40px;
+  /* outline-offset: 10px; */
+  padding: 10px;
+}
+/* Và outline không set được từng góc (lưu ý là từng góc riêng lẻ) nếu set là cả 4 góc đều ăn.
+outline-offset sẽ tạo ra 1 khoảng cách từ border ra đến outline. (Lưu ý là tính từ border ra
+chứ không tính từ margin đâu à nha)*/
+/* Trường hợp nếu không có border thì outline nó tính từ padding, không có padding thì sẽ tính
+từ content*/
