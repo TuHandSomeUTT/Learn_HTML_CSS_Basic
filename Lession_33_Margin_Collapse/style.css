@@ -1,0 +1,41 @@
+/* Trường hợp bắt buộc phải xử lý margin collapse thì ta dùng cách sau để giải quyết */
+/* body {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  border: 10px solid pink;
+} */
+
+/* Trường hợp Margin Collapse xảy ra khi 2 phần tử dọc (lưu ý là theo chiều dọc) set margin
+đối nhau kiểu như margin-bottom và margin-top, nếu 2 chiều này bên nào set margin lớn hơn
+thì trình duyệt sẽ ưu tiên bên đó. VD: khối 1 set margin-bottom là 50px và khối 2 set 70px
+cho margin-top thì tổng cộng 2 phần tử này sẽ được cách nhau 1 khoảng là 70px */
+
+/* .box1 {
+  margin-bottom: 50px;
+}
+
+.box2 {
+  margin-top: 70px;
+} */
+
+/* Trường hợp trên thì trình duyệt sẽ cho 2 phần tử cách nhau bằng 70px thôi chứ không phải 120px đâu nhé.
+Nếu muốn cách nhau 120px thì ta chỉ cần set cho 1 khối thôi là được, khỏi cần phức tạp. 
+Và lưu ý là margin collapse không bị ảnh hưởng theo chiều ngang nhé. Ngay bên dưới là ví dụ*/
+.item {
+  background-color: pink;
+  border: 2px solid red;
+}
+
+.item1 {
+  margin-right: 10px;
+}
+
+.item2 {
+  margin-left: 20px;
+}
+/* Vậy tổng 2 phần tử này cách nhau là 30px nhé */

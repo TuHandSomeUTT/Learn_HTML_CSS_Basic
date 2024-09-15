@@ -1,0 +1,15 @@
+.box_parent {
+  background-color: pink;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+/* Ta chỉ muốn thẻ con áp dụng margin mà không muốn thẻ cha bị kéo thì thì sao? Thêm 2 dòng cuối
+như bên trên là được (cái này sẽ học sau) */
+.box_child {
+  background-color: aquamarine;
+  width: 50%;
+  margin-top: 70px; /*Mặc dù chỉ set cho thẻ con nhưng nó kéo luôn cả khối cha xuống 70px theo*/
+}
+/* Trường hợp cả khối cha và con set margin cùng chiều thì cái nào có margin lớn hơn sẽ được
+trình duyệt ưu tiên */
