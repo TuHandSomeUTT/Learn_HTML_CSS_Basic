@@ -1,0 +1,10 @@
+body {
+  font-style: italic;
+  color: palevioletred;
+  font-size: 30px;
+  border-top: 10px solid greenyellow;
+}
+/* Khi tác động css lên thẻ body thì các thẻ con nằm bên trong body cũng dính css theo. Lên
+localhost và inspect để xem nó sẽ có dòng chữ Inherited from body.
+Thuộc tính border-top không kế thừa vì ta chỉ thấy nó có border top ở thẻ cha còn lại các thẻ con
+không có */
